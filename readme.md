@@ -1,13 +1,27 @@
 # Fourrier wonder
 
-This repository originally aims at reproducing visualisation from [3Blue1Brown channel](https://www.youtube.com/watch?v=-qgreAUpPwM)
+This repository originally aims at reproducing visualisation from [3Blue1Brown channel](https://www.youtube.com/watch?v=-qgreAUpPwM).
+
+
+Meaning, from an arbitrary line
+
+![Arbitrary line](videos/key_sol.png) 
+
+find the Fourrier coefficients such that the Fourrier partial sum made from these coefficients approximate the line.
+
+![Fourrier serie of the line](videos/sol_key.gif).
+
 
 Everything is written in python. Because the notebook contains animation, it cannot be rendered within github. You can play with it on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/barbet/Fourrier_wonder/master).
 
+* The notebook `full_notebook` shows all the code necessary for this task.
+* The notebook `essential_notebook` import all these code so that only the main steps are shown.
+
+The main steps of full_notebook are
 
 ## 1. Animating a fourrier series
 
-The first part of the notebook creates a `FourrierCurve` object. This is mostly a dictionnary frequency: complex coefficient. 
+The first part of the notebook creates a `FourrierCurve` object. This is mostly a dictionnary {frequency: complex coefficient}. 
 It computes the trajectory of this serie within the complex plan.
 This enables us to draw or animate the drawing.
 
@@ -26,5 +40,7 @@ Some drawings of my own are available in "/drawings/" for illustration purpose
 
 export env with `conda env export --no-builds -f environment.yml` and manually prune
 windows specific packages (for mybinder)
+
+create gif from mp4 with `ffmpeg -i sol_key.mp4 -f sol_key.gif`
 
 
