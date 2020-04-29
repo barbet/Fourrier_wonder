@@ -1,6 +1,6 @@
 # Fourrier wonder
 
-This repository originally aims at reproducing visualisation from [3Blue1Brown channel](https://www.youtube.com/watch?v=-qgreAUpPwM).
+This repository originally aims at reproducing visualisation from [3Blue1Brown channel](https://www.youtube.com/watch?v=-qgreAUpPwM). The result is far from being as mesmerizing as the animations shown on this video, all the animation being made through the notebook: Everything is written in python.
 
 
 Meaning, from an arbitrary line
@@ -12,10 +12,10 @@ find the Fourrier coefficients such that the Fourrier partial sum made from thes
 ![Fourrier serie of the line](videos/sol_key.gif).
 
 
-Everything is written in python. Because the notebook contains animation, it cannot be rendered within github. You can play with it on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/barbet/Fourrier_wonder/master).
+Because the notebook contains animation, it cannot be rendered within github. You can play with it on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/barbet/Fourrier_wonder/master).
 
 * The notebook `full_notebook` shows all the code necessary for this task.
-* The notebook `essential_notebook` import all these code so that only the main steps are shown.
+* The notebook `demo` import all these code so that only the main steps are shown.
 
 The main steps of full_notebook are
 
