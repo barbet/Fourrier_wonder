@@ -22,7 +22,9 @@ To start drawing you need to click, then draw with your mouse, and click again t
 You can then find the `FourrierCurve` fitting your drawing.
 Some drawings of my own are available in "/drawings/" for illustration purpose
 
-## Miscellaneous
+## Environment
 
-export env with `conda env export --no-builds -f environment.yml`
+export env with `conda env export --no-builds -f environment.yml` and manually prune
+windows specific packages (for mybinder)
+
 
