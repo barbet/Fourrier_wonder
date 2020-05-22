@@ -153,7 +153,7 @@ class FourrierCurve(dict):
             return [ln, arr]+ cir
 
         ani = FuncAnimation(fig, _update, frames=self.trajectory.columns,
-                            init_func=_init, blit=True)
+                            init_func=_init, blit=True, interval=80)
         plt.axis('equal')
         plt.axis('off')
         plt.show()
